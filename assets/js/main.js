@@ -126,6 +126,7 @@
 	// Nav Panel.
 
 		// Toggle.
+		// **This code allows us to show the menu in mobile view**
 			$navPanelToggle = $(
 				'<a href="#navPanel" id="navPanelToggle">Menu</a>'
 			)
