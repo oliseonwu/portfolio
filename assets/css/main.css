@@ -3574,10 +3574,6 @@ input, select, textarea {
 			visibility: visible;
 		}
 
-			/* #header .logo:hover {
-				border-color: #18bfef !important;
-				color: #18bfef !important;
-			} */
 
 		@media screen and (max-width: 980px) {
 
