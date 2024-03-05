@@ -298,7 +298,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #18bfef !important;
+			/* color: #18bfef !important; */
 		}
 
 	strong, b {
@@ -2919,9 +2919,7 @@ input, select, textarea {
 			position: relative;
 		}
 
-		header > p {
-			font-style: italic;
-		}
+		
 
 		header > h1 + p {
 			font-size: 1.1rem;
@@ -3576,10 +3574,10 @@ input, select, textarea {
 			visibility: visible;
 		}
 
-			#header .logo:hover {
+			/* #header .logo:hover {
 				border-color: #18bfef !important;
 				color: #18bfef !important;
-			}
+			} */
 
 		@media screen and (max-width: 980px) {
 
@@ -4687,3 +4685,17 @@ input, select, textarea {
 		}
 
 	}
+
+	.extraPadding{
+		padding-top: 37px;
+	}
+
+	.noselect {
+		-webkit-touch-callout: none; /* iOS Safari */
+		  -webkit-user-select: none; /* Safari */
+		   -khtml-user-select: none; /* Konqueror HTML */
+			 -moz-user-select: none; /* Old versions of Firefox */
+			  -ms-user-select: none; /* Internet Explorer/Edge */
+				  user-select: none; /* Non-prefixed version, currently
+										supported by Chrome, Edge, Opera and Firefox */
+	  }
