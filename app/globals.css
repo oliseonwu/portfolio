@@ -1,6 +1,11 @@
 /* By imorting tailwind, some styles are applied Automatically */
 @import "tailwindcss"; 
 
+/* Add smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
 /* ":root" is a sudo class. sudo classes are used to specify a
 state for a css elemnet. its usually in this form:
 
