@@ -1,0 +1,69 @@
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: auto;
+  /* margin-right: 100px; */
+  
+  /* background-color: blue; */
+  /* margin-left: 1.1rem;
+  width: fit-content;
+  padding-right: 1rem; */
+}
+
+.menuList {
+  /* list-style: none; */
+  /* padding: 0;
+  margin: 0; */
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.menuItem {
+    font-size: 0.8rem;
+    height: 3rem ;
+    align-content: center;
+    color: #f3f3f3;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+
+}
+.whiteMenuItem {
+  color: #f3f3f3;
+}
+.blueMenuItem {
+  color: #6ec1e4;;
+}
+
+
+
+.menuName {
+    /* flex: 1; */
+    /* width: 10rem; */
+    /* background-color: rebeccapurple; */
+    /* min-width: 150px; */
+    margin-right: 10px;
+
+}
+
+.verticalBar {
+  width: 3px;
+  height: 3rem;
+  background: brown;
+  border-radius: 2px;
+  /* here we we are using the top property to specify were to
+  move the vertical bar to  */
+  transition: top 0.2s ease-out
+} 
+
+@media(max-width: 600px){
+  .menuContainer{
+    display: none;
+  }
+  .menuContainer{
+
+  }
+}

@@ -1,0 +1,146 @@
+/* components/styles/Projects.module.css */
+.section {
+  /* background-color: aquamarine; */
+  padding: 0px 16px 24px 16px;
+  /* max-width: 1180px; */
+}
+
+.slash{
+    padding-right: 1rem;
+    color: white;
+}
+/* .headingContainer {
+    display: flex;
+    font-size: var(--h2-text-size);
+} */
+.heading {
+  color: #f3f3f3;
+  margin-bottom: 50px;
+  
+}
+.projectContainer {
+  margin-bottom: 120px;
+  color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+    /* background-color: red; */
+  max-width: 518px; 
+
+  
+  }
+
+  .imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#565656;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding-top: 22px;
+    padding-bottom: 16px;
+  }
+
+  .image {
+    aspect-ratio: 0.5;
+    width: 160px;
+
+  }
+  
+  .projectDetails {
+    padding: 21px;
+    padding-top: 35px;
+    background-color: #1a1a1a;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .contentHeading { 
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: flex-start; */
+    margin-bottom: 0.5rem;
+    /* background-color: red; */
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+
+  .linkContainer {
+    display: flex;
+    /* Since the flex direction is now row, we have to tell it to 
+    fill up the whole width using flexgrow: 1*/
+    flex-grow: 1; 
+    gap: 14px;
+    /* background-color: blue; */
+    justify-content: flex-end;
+    align-items: center;
+    /* height: 32; */
+  }
+  .link {
+    opacity: 0.75;
+  }
+  
+  .link:hover {
+    opacity: 1;
+  }
+  
+  
+  
+  .bulletList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .bulletItem {
+    position: relative;
+    margin-bottom: 1.2rem;
+    padding-left: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .bulletItem::before {
+    content: '\25B7'; /* You can change this to any bullet character you prefer */
+    position: absolute;
+    left: 0;
+    color: #6ec1e4; /* Adjust color as needed */
+    font-size: 1rem;
+    top: 0.1rem;
+  }
+  
+  .techStack {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    padding-top: 12px;
+  }
+
+  @media(min-width: 651px) {
+    .projectContainer {
+      flex-direction: row;
+      margin-bottom: 32px;
+      max-width: 839px;
+    }
+    .imageContainer {
+      display: flex;
+      flex-shrink: 0;
+      flex-grow: 1;
+      flex-basis: 50%;
+      justify-content: center;
+      border-radius: 10px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    .contentHeading { 
+      
+      margin-bottom: 1.5rem;
+      
+    }
+    .projectDetails {
+      
+      border-top-right-radius: 10px;
+    }
+}
+  

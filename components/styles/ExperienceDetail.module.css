@@ -1,0 +1,59 @@
+.detailContainer {
+  /* padding: 2rem 2.5rem; */
+  padding-top: 0;
+  /* background: green; */
+  color: #e6e6e6;
+  /* flex-grow: 4;
+  flex-shrink: 1;
+   */
+   flex: 1;
+   flex-shrink: 0;
+  flex-basis: 50%;
+
+  
+  
+  
+}
+
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #e6e6e6;
+}
+
+.date {
+  font-size: 1rem;
+  color: #b0b0b0;
+  margin-bottom: 1.8rem;
+}
+
+.bulletList {
+  list-style: none;
+  padding: 0;
+}
+
+.bulletItem {
+  position: relative;
+  margin-bottom: 1.2rem;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.bulletItem::before {
+  content: '\25B7';
+  position: absolute;
+  left: 0;
+  color: #6ec1e4;
+  font-size: 1rem;
+  top: 0.1rem;
+} 
+/* on desktop */
+ @media(min-width: 800px) {
+  .detailContainer {
+    /* This is needed to make the width of the experiece section constant */
+  width: 700px; 
+    /* background-color: red; */
+  }
+}
