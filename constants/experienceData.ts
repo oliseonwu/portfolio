@@ -15,7 +15,7 @@ const experienceData = [
     bulletPoints: [
       "Designed, developed, and deployed a cost-efficient, modern website for a startup",
       "Developed a Mobile app using React Native while collaborating with stakeholders and other developers to meet deadlines.",
-      "Wrote automated tests to test.",
+      "Wrote automated tests.",
     ],
   },
   {
