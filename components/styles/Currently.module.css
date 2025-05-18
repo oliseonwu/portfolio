@@ -1,0 +1,77 @@
+/* components/styles/Currently.module.css */
+.link {
+  text-decoration: none;
+}
+.currently {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 1.1rem;
+  border-radius: 9999px;
+  background: rgba(24, 24, 27, 0.3);
+  border: 1px solid rgba(113, 113, 122, 0.25);
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  transition: background 0.2s, border 0.2s;
+  min-height: 2.2rem;
+  min-width: 220px;
+}
+
+.currently:hover {
+  background-color: #343333;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  /* color: #8ecae6; */
+  /* filter: drop-shadow(0 0 2px #8ecae6cc); */
+}
+
+.text {
+  color: #bdbdbd;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-shadow: 0 1px 2px #000a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
+  
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.fadeIn {
+  animation: fadeIn 0.4s ease-in;
+  opacity: 1;
+}
+.fadeOut {
+  animation: fadeOut 0.4s ease-out;
+  opacity: 0;
+} 
+
+
+@keyframes breathe {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.breathe {
+    animation: breathe 2s ease-in-out infinite;
+  }

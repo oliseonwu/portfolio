@@ -1,0 +1,71 @@
+/* By imorting tailwind, some styles are applied Automatically */
+@import "tailwindcss"; 
+
+/* ":root" is a sudo class. sudo classes are used to specify a
+state for a css elemnet. its usually in this form:
+
+css-selector-id-or-classname:pseudo-class {
+  property: value;
+}
+
+examples of sudo class include : :hover, :active, :focus etc
+
+Now inside the css block it allows us to specify what happens
+when a css element is in a specific state 
+*/
+:root {
+  /* These are just variables that are accessable in any css file */
+  --background: #171717;
+  --foreground: #171717;
+  --breakpoint-desktop: 1024px;
+  --body-text-size-desktop:1.1rem;
+  --body-text-size-mobile:1rem;
+  --h1-text-size: 2.3rem;
+  --h2-text-size: 2rem;
+  
+}
+
+body {
+  background: var(--background);
+} 
+
+
+h1 {
+  font-size: var(--h1-text-size);
+  font-weight: 700;
+}
+h2 {
+  font-size: var(--h2-text-size);
+  font-weight: 600;
+}
+
+/* on desktop */
+@media (min-width: 800px) {
+  body {
+    /* margin-left: 1; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 14%;
+    padding-right: 14%;
+    /* width: 80%; */
+
+    
+  }
+ }
+/* 
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+*/
