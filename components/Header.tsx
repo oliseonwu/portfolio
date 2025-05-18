@@ -1,9 +1,11 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./styles/Header.module.css";
+import { useEffect, useState } from "react";
 
-const navLinks = [
-  { name: "Home", href: "#", active: true },
+const defaultNavLinks = [
+  { name: "Home", href: "#", active: false },
   { name: "About", href: "#about", active: false },
   { name: "Experience/Education", href: "#experience", active: false },
   { name: "Projects", href: "#projects", active: false },
@@ -33,15 +35,52 @@ const icons = [
 ];
 
 export default function Header() {
+  const [isScrolledFromTop, setIsScrolledFromTop] = useState(false);
+  const [navLinks, setNavLinks] = useState(defaultNavLinks);
+
+  useEffect(() => {
+    // set which link is bolded
+    setInitalActiveLink();
+
+    // Check if the user has scrolled from the top
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolledFromTop(scrollPosition > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleLinkClick = (index: number) => {
+    setNavLinks(navLinks.map((link, i) => ({ ...link, active: i === index })));
+  };
+
+  const setInitalActiveLink = () => {
+    const hash = window.location.hash;
+    const index = navLinks.findIndex((link) => link.href === hash);
+
+    if (index !== -1) {
+      setNavLinks(
+        navLinks.map((link, i) => ({ ...link, active: i === index }))
+      );
+    }
+  };
   return (
     <header className={styles.header}>
-      <nav className={styles.nav}>
+      <nav
+        className={`${styles.nav} ${
+          isScrolledFromTop ? styles.onScrolledFromTop : ""
+        }`}
+      >
         <ul className={styles.navLinks}>
-          {navLinks.map((link) => (
+          {navLinks.map((link, index) => (
             <li key={link.name}>
               <a
                 href={link.href}
                 className={link.active ? styles.activeLink : styles.link}
+                onClick={() => handleLinkClick(index)}
               >
                 {link.name}
               </a>
