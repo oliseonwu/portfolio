@@ -1,7 +1,9 @@
 /* By imorting tailwind, some styles are applied Automatically */
 @import "tailwindcss"; 
 
-/* Add smooth scrolling behavior */
+/* Add smooth scrolling behavior when a link in the header
+ component is clicked */
+
 html {
   scroll-behavior: smooth;
 }

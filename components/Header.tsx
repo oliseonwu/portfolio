@@ -11,7 +11,7 @@ const defaultNavLinks = [
   { name: "Projects", href: "#projects", active: false },
   {
     name: "Resume",
-    href: "/Olise_Onwu_Resume_ReactNative_Developer.pdf",
+    href: "./Olise_Onwu_Resume_ReactNative_Developer.pdf",
     active: false,
   },
 ];
