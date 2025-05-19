@@ -2,7 +2,7 @@
   /* background-color: aquamarine; */
   padding: 120px 16px 0px 16px;
   /* max-width: 1180px; */
-  height: 800px;
+  height: 92.5vh;
 }
 .contents {
     display: flex;
@@ -38,7 +38,8 @@
     flex-direction: row;
   }
   .section {
-    max-height: 600;
+    /* max-height: 600px; */
+    height: 600px;
   }
   
 }
