@@ -11,7 +11,7 @@ const experienceData = [
   {
     heading: "Fullstack developer @ Me2u Solutions",
     company: "ME2U SOLUTIONS",
-    date: "2024 - PRESENT",
+    date: "2023 - 2024",
     bulletPoints: [
       "Designed, developed, and deployed a cost-efficient, modern website for a startup",
       "Developed a Mobile app using React Native while collaborating with stakeholders and other developers to meet deadlines.",
